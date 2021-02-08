@@ -97,49 +97,7 @@ const ingerdinetDiv = document.getElementById("initem") ;
 }
 
 
-   
-// item.insertAdjacentHTML ("beforebegin" ,  `<li>${data.meals[0].strIngredient1},${data.meals[0].strIngredient2},${data.meals[0].strIngredient3} </li>`
-
-
-  // console.log(data.meals[0])
-
-  // console.log(data.meals[0].strIngredient1);
-
-//  const ingerdinet = item => {
-//    data.meals[0] = item;
-//    alert(.strIngredient1);
-//  }
+ 
 
 
 
-
-  //   inGredients(data.meals[0]) );
-
-
-  // const inGredientsItem = inGredients => {
-
-  //     alert(inGredients[0]);
-
-  // }console.log(data.meals[0].strIngredient1)
-  //console.log(data.meals[0])
-  // const ingerdinetDiv = document.createElement('div');
-
-
-
-
-
-
-
-
-
-
-
-
-// for(let i = 3; i < value.length; i++){
-//   if(value[i] === null || value[i] === " "){
-//       break;
-//   }
-//   else{
-//       console.log(value[i])
-//   }
-// }
