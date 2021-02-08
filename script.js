@@ -62,7 +62,8 @@ const ingerdinetDiv = document.getElementById("initem") ;
   ingerdinetDiv.innerHTML +=
 
   `
-<img src="${item.str}
+  <div class="ingredientItem">
+<img src="${item.strMealThumb}">
   <h2> ${item.strMeal}</h2>
     <ul>
 
@@ -75,13 +76,17 @@ const ingerdinetDiv = document.getElementById("initem") ;
     <li>${item.strIngredient7}</li>
     <li>${item.strIngredient8}</li>
     <li>${item.strIngredient9}</li>
+    <li>${item.strIngredient10}</li>
+    <li>${item.strIngredient11}</li>
+    <li>${item.strIngredient12}</li>
+
 
 
 
     
     </ul>
   
-   
+   </div>
  `
   
 
