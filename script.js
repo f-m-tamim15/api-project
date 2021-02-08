@@ -8,31 +8,26 @@ const button =  document.getElementById('input').value
   .then(res => res.json())
   .then(data => displayCountries(data.meals))
   
+
+
+
   const displayCountries = countries => {
     const countriesDiv = document.getElementById('countries');
     countriesDiv.innerHTML = "";
    countries.forEach(country => {
-    // const country = countries[i];
-        // const countryDiv = document.createElement('div');
-    
-      
-    // countryDiv.className = 'country';
-    
+  
     countriesDiv.innerHTML +=  `
 <div class="country">
       <img src ="${country.strMealThumb}"
      <h3 class='meal-name'>${country.strMeal}</h3>
      <p>${country.strArea} </p>
-      <button onclick="displayIngredients('${country.idMeal}')"> intgredients</button>
+      <button id="intbtn" onclick="displayIngredients('${country.idMeal}')"> intgredients</button>
   
       </div>
 
     `
 
-    // countryDiv.innerHTML = countryInfo ;
     
-    
-    // countriesDiv.appendChild(countryDiv);
      
    });
     
@@ -64,7 +59,9 @@ const ingerdinetDiv = document.getElementById("initem") ;
   `
   <div class="ingredientItem">
 <img src="${item.strMealThumb}">
-  <h2> ${item.strMeal}</h2>
+  <h1> ${item.strMeal}</h1>
+  <h2> Area : ${item.strArea} </h2>
+     <h3>Ingredients</h3>
     <ul>
 
     <li>${item.strIngredient1}</li>

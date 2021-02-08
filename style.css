@@ -50,3 +50,10 @@ position: relative;
     text-align: center;
     width:90%;
 }
+
+#intbtn{
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+    color:white;
+}
