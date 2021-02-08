@@ -39,8 +39,6 @@ const button =  document.getElementById('input').value
   }
   
 }
-console.log("helo");
-// const item = document.getElementById("target");
 
 
 const displayIngredients = id => {
@@ -49,16 +47,22 @@ const displayIngredients = id => {
 
   fetch(url)
   .then(res => res.json())
-  .then(data => chicken(data.meals[0]));
+  .then(data => food(data.meals[0]));
   
 
 
-function chicken (item){
+function food (item){
    const lastDiv = document.createElement('div');
+   lastDiv.innerHTML ="";
+console.log(item);
 const ingerdinetDiv = document.getElementById("initem") ;
-  const lastDivInfo = 
-  `
+  // const lastDiv = 
+  ingerdinetDiv.innerHTML ="";
 
+  ingerdinetDiv.innerHTML +=
+
+  `
+<img src="${item.str}
   <h2> ${item.strMeal}</h2>
     <ul>
 
@@ -81,8 +85,8 @@ const ingerdinetDiv = document.getElementById("initem") ;
  `
   
 
-lastDiv.innerHTML = lastDivInfo;
- ingerdinetDiv.appendChild(lastDiv);
+// lastDiv.innerHTML = lastDivInfo;
+//  ingerdinetDiv.appendChild(lastDiv);
 }
 
 }
